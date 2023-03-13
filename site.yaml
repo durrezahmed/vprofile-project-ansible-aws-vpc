@@ -1,0 +1,5 @@
+---
+- name: Configure VPC for Vprofile Project
+  ansible.builtin.import_playbook: vpc-setup.yaml
+- name: Configure Bastion Host for Vprofile Project
+  ansible.builtin.import_playbook: bastion-instance.yaml
